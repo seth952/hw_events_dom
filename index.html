@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lord of the Rings Character List App</title>
+    <script src="js/app.js">
+
+    </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  </head>
+  <body>
+
+    <h1>LOTR Characters List</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="Hometown" class="primary">Hometown</label>
+          <input type="text" id="Hometown" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="Race" class="primary">Race</label>
+          <select id="Race">
+            <option value="" disabled selected></option>
+            <option value="Man">Man</option>
+            <option value="Elven">Elven</option>
+            <option value="Dwarf">Dwarf</option>
+            <option value="Dwarf">Wizard</option>
+            <option value="Hobbit">Hobbit</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+      <button id="delete-all">Delete All</button>
+      <button id="date">Date</button>
+    </form>
+
+    <h1>Added Characters:</h1>
+    <ul id="character-list"></ul>
+  </body>
+</html>
